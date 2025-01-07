@@ -1,0 +1,111 @@
+/* Global Body Styling */
+body {
+ background: radial-gradient(circle, #CA7373, #F9C0AB); /* Radial gradient */
+
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply fade-in animation to all elements with class 'fade-in' */
+.fade-in {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+/* Profile Image Styling */
+.card-img-top {
+  width: 140px; 
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin: 0 auto; 
+}
+
+/* Card Styling */
+.card {
+  width: 18rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px auto;
+background: radial-gradient(circle, #FFCFCF, #FFE2E2); /* Radial gradient */
+
+}
+
+/* Card Body Styling */
+.card-body {
+  padding: 15px;
+}
+
+.card-body p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.card-body i {
+  margin-right: 10px;
+}
+
+/* List Item Styling */
+.li {
+  font-weight: bold;
+}
+
+/* Skill Section Styling */
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skill-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.skill-percentage {
+  font-size: 12px;
+}
+
+/* Skill Bar Styling */
+.skill-bar {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background-color: #A888B5;
+  border-radius: 10px 0 0 10px;
+  animation: fillSkillBar 2s ease-in-out forwards;
+}
+
+/* Animation for skill bar fill */
+@keyframes fillSkillBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Styling for skill bars */
+.skill-bar-fill {
+  animation: fillSkillBar 2s ease-in-out forwards;
+}
